@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Document</title>
+    <script>
+        function hello(){
+var name=document.getElementById("Nameid").value;
+var Father=document.getElementById("Fatherid").value;
+var Email=document.getElementById("Emailid").value;
+var Moblie=document.getElementById("Moblieid").value;
+var Address=document.getElementById("Addressid").value;
+if((name<=0)&&(Father<=0) &&(Email<=0) &&(Moblie<=0  || Moblie.length>10) &&(Address<=0 ))
+{
+    alert("please fill the details")
+}
+}
+</script>
+</head>
+<body>
+    <form>
+        <input type=text placeholder="Name" id="Nameid"  maxlength=12><br>
+        <input type=text placeholder="Father Name" id="Fatherid"  maxlength=6><br>
+        <input type=email placeholder="Email" id="Emailid" maxlength=6 ><br>
+        <input type=number placeholder="Moblie Number" id="Moblieid" maxlength=10><br>
+        <textarea placeholder="Address" id="Addressid"></textarea>
+        <button type="submit" onclick="hello()">Click</button><button type="reset">reset</button>
+        </form>
+</body>
+</html>
